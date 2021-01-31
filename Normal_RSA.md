@@ -1,10 +1,11 @@
 ## 题目
 题目给了[两个文件](https://adworld.xctf.org.cn/media/task/attachments/547de1d50b95473184cd5bf59b019ae8.rar)
 * 一个是flag.enc,一个是pubkey.pem
-
 这里其实需要我们从公钥中破解得到私钥。
 * 1.可以用现有的工具RsaCtfTool
 ```python3 RsaCtfTool.py --publickey pubkey.pem  --uncipherfile flag.enc```
+
+![image](https://github.com/djh-sudo/Crypto/blob/main/RSA.png)
 
 * 2.另外一种方法会详细一点，是第一种的展开版本
 我们这里就以它为例，首先公钥包含了```(e,n)```两个参数，RSA的安全性基于大整数```n```难分解，如果```n```被分解了，私钥```d```自然就容易求，这里我们可以自己尝试分解```n```
