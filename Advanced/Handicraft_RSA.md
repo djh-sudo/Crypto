@@ -1,7 +1,7 @@
 ## 题目
 [附件链接](https://adworld.xctf.org.cn/media/task/attachments/f5346507773f4b909479387d59a01710)
 * 打开文件
-```
+```python
 #!/usr/bin/python
 
 from Crypto.Util.number import *
@@ -54,7 +54,7 @@ for _ in xrange(s):
 ```
 这里可以尝试对`s`猜测，从而爆破得到密文
 * `python`脚本
-```
+```python
 import gmpy2
 from Crypto.Util.number import *
 import random
