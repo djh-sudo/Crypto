@@ -1,6 +1,6 @@
 ## 题目
 [原链接](https://adworld.xctf.org.cn/media/task/attachments/7634d7960e85494bb9ae648ea871f085.py)
-```
+```python
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -59,7 +59,7 @@ new_q = 254693415100156107106016775414900688828740227714733791479596828779798118
 ```
 * 之后一切就很顺利，解出```d```，恢复明文```m```
 * ```python```脚本
-```
+```python
 import gmpy2
 from Crypto.Util.number import *
 import random
@@ -92,7 +92,7 @@ print(long_to_bytes(m))
 # b'flag{6b1ff461dc15e5476cafe887189178e3924dad84}'
 ```
 * ```sage```脚本(对sage了解不多,使用[现成脚本](https://github.com/Zui-Qing-Feng/RSA/blob/master/03.Factoring%20with%20high%20bits%20known%20Attack))
-```
+```sage
 n = 0x241ac918f708fff645d3d6e24315e5bb045c02e788c2b7f74b2b83484ce9c0285b6c54d99e2a601a386237d666db2805175e7cc86a733a97aeaab63486133103e30c1dca09741819026bd3ea8d08746d1d38df63c025c1793bdc7e38d194a30b492aadf9e31a6c1240a65db49e061b48f1f2ae949ac9e7e0992ed24f9c01578dL  
 p_fake = 0x2c1e75652df018588875c7ab60472abf26a234bc1bfc1b685888fb5ded29ab5b93f5105c1e9b46912368e626777a873200000000000000000000000000000000L  
    
